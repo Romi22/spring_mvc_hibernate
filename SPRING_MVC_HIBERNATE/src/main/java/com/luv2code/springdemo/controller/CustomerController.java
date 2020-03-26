@@ -26,6 +26,8 @@ public class CustomerController {
     @GetMapping("/list")
     public String listCustomers(Model theModel) {
 
+       // System.out.println("********************************************************************************************");
+
         //get customer from dao
         List<Customer> customerList=customerService.getCustomers();
 

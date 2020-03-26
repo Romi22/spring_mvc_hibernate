@@ -1,10 +1,12 @@
 package com.luv2code.springdemo.service;
 
-import com.luv2code.springdemo.model.Account;
+
 import com.luv2code.springdemo.model.Branch;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+//@Service
 public interface BranchService
 {
     public List<Branch> getBranches();

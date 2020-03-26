@@ -2,10 +2,11 @@ package com.luv2code.springdemo.dao;
 
 
 import com.luv2code.springdemo.model.Account;
-import com.luv2code.springdemo.model.Customer;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+//@Repository
 public interface AccountDAO
 {
     public List<Account> getAccounts();

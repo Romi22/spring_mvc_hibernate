@@ -2,7 +2,6 @@ package com.luv2code.springdemo.service;
 
 
 import com.luv2code.springdemo.dao.TransactionDAO;
-import com.luv2code.springdemo.model.Account;
 import com.luv2code.springdemo.model.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -43,5 +42,20 @@ public class TransactionServiceImp implements TransactionService
     public void deleteTransaction(int theId) {
 
         transactionDAO.deleteTransaction(theId);
+    }
+
+    @Override
+    public String debit(int theId) {
+        return transactionDAO.debit(theId);
+    }
+
+    @Override
+    public String credit(int theId) {
+        return transactionDAO.credit(theId);
+    }
+
+    @Override
+    public String checkBalance(int theId) {
+         return transactionDAO.credit(theId);
     }
 }

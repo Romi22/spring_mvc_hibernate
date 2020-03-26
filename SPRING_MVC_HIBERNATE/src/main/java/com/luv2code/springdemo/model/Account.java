@@ -1,12 +1,13 @@
 package com.luv2code.springdemo.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="account")
 public class Account
 {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     String accountID;
     String accountType;
     Integer accountNo;

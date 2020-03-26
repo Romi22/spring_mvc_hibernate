@@ -34,7 +34,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -68,10 +68,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="414" y="145" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1585117754784" />
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1585168130740">
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser" timestamp="1585199779932">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1585168130740" />
+    <state x="446" y="26" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1585199779932" />
     <state x="371" y="89" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585145643084">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -96,10 +96,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1585156267325" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1585139802453">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1585216942285">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585139802453" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585216942285" />
     <state x="336" y="72" width="739" height="606" key="find.popup" timestamp="1585159956564">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

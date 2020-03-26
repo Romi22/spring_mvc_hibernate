@@ -1,8 +1,6 @@
 package com.luv2code.springdemo.controller;
 
-import com.luv2code.springdemo.model.Account;
 import com.luv2code.springdemo.model.Transaction;
-import com.luv2code.springdemo.service.AccountService;
 import com.luv2code.springdemo.service.TransactionServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -77,25 +75,25 @@ public class TransactionController {
     }
 
     @RequestMapping("/debit")
-    public String debit(@RequestParam("transactionID") Transaction theTransaction)
+    public String debit(@RequestParam("transactionID")int theId)
     {
-        transactionService.debit(theTransaction);
+        transactionService.debit(theId);
 
         return "transaction-debit";
     }
 
     @RequestMapping("/credit")
-    public String debit(@RequestParam("transactionID") Transaction theTransaction)
+    public String credit(@RequestParam("transactionID") int theId)
     {
-        transactionService.credit(theTransaction);
+        transactionService.credit(theId);
 
         return "transaction-debit";
     }
 
     @RequestMapping("/checkBalance")
-    public String debit(@RequestParam("transactionID") Transaction theTransaction)
+    public String check(@RequestParam("transactionID")int theId)
     {
-        transactionService.check(theTransaction);
+        transactionService.checkBalance(theId);
 
         return "transaction-checkBalance";
     }

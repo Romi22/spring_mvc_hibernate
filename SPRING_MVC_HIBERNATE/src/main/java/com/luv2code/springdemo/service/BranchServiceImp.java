@@ -1,7 +1,6 @@
 package com.luv2code.springdemo.service;
 
 import com.luv2code.springdemo.dao.BranchDAO;
-import com.luv2code.springdemo.model.Account;
 import com.luv2code.springdemo.model.Branch;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

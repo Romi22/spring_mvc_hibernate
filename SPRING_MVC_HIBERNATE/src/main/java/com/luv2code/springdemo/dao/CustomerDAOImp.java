@@ -1,14 +1,15 @@
 package com.luv2code.springdemo.dao;
 
-import com.luv2code.springdemo.model.Account;
 import com.luv2code.springdemo.model.Customer;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
-public class CustomerDAOImp implements CustomerDAO
-{
+@Repository
+public class CustomerDAOImp extends CustomerDAO {
 
     @Autowired
     private SessionFactory sessionFactory;

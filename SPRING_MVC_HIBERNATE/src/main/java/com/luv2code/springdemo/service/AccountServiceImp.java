@@ -1,9 +1,7 @@
 package com.luv2code.springdemo.service;
 
 import com.luv2code.springdemo.dao.AccountDAO;
-import com.luv2code.springdemo.dao.CustomerDAO;
 import com.luv2code.springdemo.model.Account;
-import com.luv2code.springdemo.model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

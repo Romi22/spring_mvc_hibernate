@@ -1,13 +1,15 @@
 package com.luv2code.springdemo.dao;
 
-import com.luv2code.springdemo.model.Account;
-import com.luv2code.springdemo.model.Customer;
+
 import com.luv2code.springdemo.model.Transaction;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
+@Repository
 public class TransactionDAOImp implements TransactionDAO
 {
 
@@ -19,6 +21,7 @@ public class TransactionDAOImp implements TransactionDAO
     public List<Transaction> getTransactions() {
 
         //get the current hibernate session
+
         Session currentSession=sessionFactory.getCurrentSession();
 
         //create a query
@@ -61,16 +64,16 @@ public class TransactionDAOImp implements TransactionDAO
     }
 
     @Override
-    public String debit(Transaction theTransaction) {
+    public String debit(int theId) {
 
         Session currentSession=sessionFactory.getCurrentSession();
         // read from database using the primary key
-        Transaction transaction = (Transaction) currentSession.load(Transaction.class,(theTransaction));
+        Transaction transaction = (Transaction) currentSession.load(Transaction.class,(theId));
         return null;
     }
 
     @Override
-    public String credit(Transaction theTransaction) {
+    public String credit(int theId) {
         Session currentSession=sessionFactory.getCurrentSession();
         // read from database using the primary key
         Transaction theTransaction = (Transaction) currentSession.load(Transaction.class,(theId));
@@ -78,7 +81,7 @@ public class TransactionDAOImp implements TransactionDAO
     }
 
     @Override
-    public String checkBalance(Transaction theTransaction) {
+    public String checkBalance(int theId) {
         Session currentSession=sessionFactory.getCurrentSession();
         // read from database using the primary key
         Transaction theTransaction = (Transaction) currentSession.load(Transaction.class,(theId));

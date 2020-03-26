@@ -1,7 +1,7 @@
 package com.luv2code.springdemo.model;
 
 import javax.persistence.*;
-import java.util.Random;
+
 
 @Entity
 @Table(name = "customer")

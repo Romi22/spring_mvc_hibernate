@@ -1,8 +1,12 @@
 package com.luv2code.springdemo.service;
 
 import com.luv2code.springdemo.model.Transaction;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
+
+//@Service
 public interface TransactionService
 {
     public List<Transaction> getTransactions();
@@ -13,10 +17,10 @@ public interface TransactionService
 
     public void deleteTransaction(int theId);
 
-    public String debit(Transaction theTransaction);
+    public String debit(int theId);
 
-    public String credit(Transaction theTransaction);
+    public String credit(int theId);
 
-    public String checkBalance(Transaction theTransaction);
+    public String checkBalance(int theId);
 
 }

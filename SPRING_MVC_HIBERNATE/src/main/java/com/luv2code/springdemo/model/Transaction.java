@@ -1,12 +1,15 @@
 package com.luv2code.springdemo.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="transaction")
 public class Transaction
 {
+
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     String transactionID;
 
     public String getTransactionID() {

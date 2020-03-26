@@ -4,7 +4,6 @@ import com.luv2code.springdemo.dao.CustomerDAO;
 import com.luv2code.springdemo.model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import javax.transaction.Transactional;
 import java.util.List;
 

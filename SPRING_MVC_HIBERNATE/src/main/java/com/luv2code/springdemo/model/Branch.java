@@ -1,9 +1,7 @@
 package com.luv2code.springdemo.model;
 
 
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,8 +9,11 @@ import java.util.List;
 @Table(name="branch")
 public class Branch {
 
-    String branchName;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     String branchCode;
+
+    String branchName;
 
     @OneToMany
     private List<Customer> customer=new ArrayList<>();
